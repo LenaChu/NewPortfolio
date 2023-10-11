@@ -1,0 +1,14 @@
+footer {
+  width: 100vw;
+  background: #fff;
+  text-align: center;
+  height: 60px;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+p > span {
+  display: inline-block;
+  font-size: 1rem;
+  margin-right: 0.25rem;
+}

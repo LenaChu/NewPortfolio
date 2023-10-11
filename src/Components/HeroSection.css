@@ -1,0 +1,28 @@
+.hero-section {
+  width: 100%;
+  padding: 1.5rem 20vw;
+  display: flex;
+  justify-content: center;
+}
+.hero-statement {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  min-height: 240px;
+}
+.hero-statement > p {
+  font-size: 1.25rem;
+}
+.hero-statement > p > span {
+  display: inline-block;
+  font-size: 1.5rem;
+  margin-left: 0.25rem;
+}
+
+.display-title {
+  font-size: 4rem;
+  line-height: 1.2;
+  word-spacing: 0.001em;
+  margin: 1rem 0;
+}

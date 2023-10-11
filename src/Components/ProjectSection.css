@@ -1,0 +1,9 @@
+.project-section {
+  width: 100%;
+  padding: 1.5rem 18vw 2.5rem 18vw;
+  display: grid;
+  grid-template-columns: minmax(400px, 1fr) minmax(400px, 1fr);
+  grid-template-rows: 1fr 1fr;
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
+}

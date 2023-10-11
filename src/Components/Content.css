@@ -1,0 +1,5 @@
+main {
+  padding-top: 80px;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
