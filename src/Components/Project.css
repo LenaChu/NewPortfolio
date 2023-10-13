@@ -12,10 +12,20 @@
   transition: all 0.2s ease-in;
   transform: translateY(0);
   cursor: pointer;
+  background-image: url("https://static.scientificamerican.com/sciam/cache/file/F09F3D99-27FA-40AC-B6EAB643347B902E_source.jpg");
+  background-size: cover;
+  position: relative;
 }
 .project-image:hover {
   transform: translateY(-8px);
   box-shadow: var(--depth-3);
+}
+.project-image > h2 {
+  position: absolute;
+  color: #fff;
+  bottom: 1rem;
+  left: 1rem;
+  text-shadow: 0 0 1px rgb(0, 0, 0), 0 2px 4px rgb(0 0 0/10%);
 }
 .pills-container {
   height: 1.5rem;
