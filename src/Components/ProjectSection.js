@@ -6,19 +6,18 @@ export default function ProjectSecion() {
     <section className="project-section">
       <Project
         company="TalentGuard"
-        pills={["UX Design", "Product Management", "UI Design"]}
+        pills={["UX Design", "UX Research", "UI Design"]}
+        title="User Homepage"
       />
       <Project
         company="TalentGuard"
         pills={["UX Design", "Product Management", "UI Design"]}
+        title="Notification Center"
       />
       <Project
         company="TalentGuard"
         pills={["UX Design", "Product Management", "UI Design"]}
-      />
-      <Project
-        company="TalentGuard"
-        pills={["UX Design", "Product Management", "UI Design"]}
+        title="Typography"
       />
     </section>
   );
