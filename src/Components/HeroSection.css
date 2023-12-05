@@ -21,8 +21,16 @@
 }
 
 .display-title {
-  font-size: 4rem;
+  font-size: 2.5rem;
   line-height: 1.2;
   word-spacing: 0.001em;
   margin: 1rem 0;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .display-title {
+    font-size: 4rem;
+  }
+
 }
