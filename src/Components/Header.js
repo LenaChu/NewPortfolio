@@ -1,4 +1,5 @@
 import NavBttn from "./NavBttn";
+import { useEffect, useState } from "react";
 import "./Header.css";
 
 export default function Header() {
@@ -8,8 +9,10 @@ export default function Header() {
         <div className="line-1"></div>
         <div className="line-2"></div>
         <div className="line-3"></div>
-        <NavBttn name="Home" />
-        <NavBttn name="Resume" />
+        <div className="container__fullsize">
+          <NavBttn name="Home" />
+          <NavBttn name="Resume" />
+        </div>
       </div>
     </header>
   );
