@@ -2,14 +2,14 @@
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  padding: 1.5rem 5vw 2.5rem 5vw;
+  padding: 1.5rem 5% 2.5rem 5%;
   column-gap: 1.5rem;
   row-gap: 1.5rem;
 }
 
 @media only screen and (min-width: 768px) {
   .project-section {
-    padding: 1.5rem 12vw 2.5rem 12vw;
+    padding: 1.5rem 12% 2.5rem 12%;
     grid-template-columns: minmax(400px, 1fr) minmax(400px, 1fr);
     grid-template-rows: 1fr 1fr;
   }
