@@ -1,4 +1,5 @@
 import "./Project.css";
+import { Link } from "react-router-dom";
 
 export default function Project(props) {
   const pills = props.pills.map(function (pill) {
@@ -6,7 +7,9 @@ export default function Project(props) {
   });
   return (
     <div className="project-container">
-      <div className="project-image"></div>
+      <Link to={props.path}>
+        <div className="project-image"></div>
+      </Link>
       <p>Company: {props.company}</p>
       <div className="pills-container">{pills}</div>
     </div>
