@@ -4,7 +4,7 @@ import Footer from "./Components/Footer";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import About from "./Components/About";
-import Homepage from "./Components/ProjectPage/Homepage";
+import Homepage from "./Components/ProjectPage/Homepage/Homepage";
 
 function App() {
   return (

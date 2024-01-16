@@ -4,7 +4,7 @@
 
 .project-image {
   width: 100%;
-  aspect-ratio: 16/9;
+  aspect-ratio: 6/4;
   border-radius: 6px;
   background-color: rgb(0 0 0/10%);
   border: 1px solid var(--primary-color-50);

@@ -8,8 +8,10 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: center;
   width: 100%;
   min-height: 240px;
+  color: var(--txt-dark-4);
 }
 .hero-statement > p {
   font-size: 1.25rem;
@@ -24,6 +26,7 @@
   font-size: 2.5rem;
   line-height: 1.2;
   word-spacing: 0.001em;
+  font-weight: 500;
   margin: 1rem 0;
 }
 
