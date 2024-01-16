@@ -1,3 +1,19 @@
+/*global styles*/
+section{
+    padding: 100px 8%;
+    display: flex;
+    flex-direction: row;
+}
+
+.intro{
+    margin-bottom:var(--p-space-lg);
+}
+
+.intro > h2{
+    margin-bottom: var(--txt-space-lg);
+}
+
+/*project hero section*/
 .project-title{
     background: var(--accend-color-50);
     width:100%;
@@ -29,16 +45,58 @@ img[class$="2"]{
 
 
 /*client section*/
-.client-intro{
-    padding: 100px 8%;
-    display: flex;
-    flex-direction: row;
-}
-
 .client-intro > .col-1, .col-2{
     width: 50%;
 }
 
-.intro > h2{
-    margin-bottom: 1rem;
+.primary-users{
+    margin-bottom: var(--p-space-md);
+}
+
+.primary-users > h3{
+    margin-bottom: var(--txt-space-md);
+}
+
+.secondary-users > h3{
+    margin-bottom: var(--txt-space-md);
+}
+
+.client-intro .col-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-intro .col-2 .tg-logo{
+    content: url(../../../images/tg-logo.png);
+    max-width: 220px;
+    height:auto;
+}
+
+
+/*project overview*/
+.project-overview .col-1{
+    width: 60%;
+    padding-right: var(--p-space-md);
+}
+.project-overview .col-2{
+    width: 40%;
+    position: relative;
+}
+.project-overview .col-1 .breakdown{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: var(--p-space-md);
+    row-gap: var(--p-space-sm);
+}
+.project-overview .col-1 .breakdown h3{
+    margin-bottom: var(--txt-space-md);
+}
+
+.project-overview .col-2 .old-homepage{
+    content: url(../../../images/old-homepage.png);
+    max-width: 900px;
+    height: auto;
+    position: absolute;
 }

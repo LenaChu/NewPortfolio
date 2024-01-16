@@ -53,6 +53,13 @@
   --display-fs-4: calc(var(--bs-font-size) * 3.5);
   --display-fs-5: calc(var(--bs-font-size) * 3);
   --display-fs-6: calc(var(--bs-font-size) * 2.5);
+  --txt-space-lg: var(--bs-font-size);
+  --txt-space-md: calc(var(--bs-font-size)*0.75);
+  --txt-space-sm: calc(var(--bs-font-size)*0.5);
+  --sec-space: calc(var(--bs-font-size)*3.75);
+  --p-space-lg: calc(var(--bs-font-size)*2.5);
+  --p-space-md: calc(var(--bs-font-size)*2);
+  --p-space-sm: calc(var(--bs-font-size)*1.5);
 }
 
 
