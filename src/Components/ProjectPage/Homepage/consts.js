@@ -66,7 +66,7 @@ export const content = {
     },
   },
   solutions: {
-    first: "A personal and friendly landing experience.",
+    first: "Personal and friendly landing experience.",
     second: "Visibility of progress and outstanding tasks.",
     third: "Flexibility to customize based on interests.",
   },
@@ -112,9 +112,11 @@ export const content = {
       "The new user homepage received positive feedback from both end-users and prospective clients.",
     next: {
       title: "Next phase, enhance the content and continue optimization.",
-      bullet1: "Enrich data insights of the modules.",
-      bullet2: "Serve up more personalized content.(recommended skills, etc.)",
-      bullet3: "Measure the click rate of CTAs.",
+      bullets: [
+        "Enrich data insights of the modules.",
+        "Serve up more personalized content.(recommended skills, etc.)",
+        "Measure the click rate of CTAs.",
+      ],
     },
   },
 };

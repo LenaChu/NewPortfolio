@@ -70,6 +70,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 
@@ -191,4 +193,67 @@ p,
 .display-6 {
   font-size: var(--display-fs-6);
   font-weight: 400;
+}
+
+
+/*utiliting class*/
+/*spacing*/
+.p-mb_lg{
+  margin-bottom: var(--p-space-lg);
+}
+
+.p-mb_md{
+  margin-bottom: var(--p-space-md);
+}
+
+.p-mb_sm{
+  margin-bottom: var(--p-space-sm);
+}
+
+.t-mb_lg{
+  margin-bottom: var(--txt-space-lg);
+}
+
+.t-mb_md{
+  margin-bottom: var(--txt-space-md);
+}
+
+.t-mb_sm{
+  margin-bottom: var(--txt-space-sm);
+}
+
+.h-lh{
+  line-height: var(--heading-lh);
+}
+
+/*font style*/
+.italic{
+  font-style: italic;
+}
+
+/*color*/
+.txt-d-4{
+  color: var(--txt-dark-4);
+}
+.txt-d-3{
+  color: var(--txt-dark-3);
+}
+.txt-d-2{
+  color: var(--txt-dark-2);
+}
+.txt-d-1{
+  color: var(--txt-dark-1);
+}
+
+.txt-l-4{
+  color: var(--txt-light-4);
+}
+.txt-l-3{
+  color: var(--txt-light-3);
+}
+.txt-l-2{
+  color: var(--txt-light-2);
+}
+.txt-l-1{
+  color:var(--txt-light-1);
 }
