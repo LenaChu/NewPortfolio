@@ -1,11 +1,26 @@
 /*global styles*/
 section{
+    width: 100%;
     padding: 100px 8%;
     display: flex;
     flex-direction: row;
 }
 
 
+@media only screen and (max-width: 800px) and (min-width: 415px){
+    section{
+        padding: 100px 12%;
+        flex-direction: column;
+
+    }
+}
+
+@media only screen and (max-width:414px ){
+    section{
+        padding: 100px 32px;
+        flex-direction: column;
+    }
+}
 
 /*project hero section*/
 .project-title{
@@ -19,23 +34,73 @@ section{
     align-items: center;
     position: relative;
 }
+.project-title>h1, h5{
+    z-index: 2;
+}
 .project-title>h1{
     margin-bottom: 1rem;
 }
-img{
+.project-title img{
     content:url("../../../images/Desktop-dark\ 2.png");
     max-width: 600px;
     height: auto;
     position: absolute;
+    z-index:1;
 }
-img[class$="1"]{
+.project-title img[class$="1"]{
     left: -10%;
     top:-35px;
 }
-img[class$="2"]{
+.project-title img[class$="2"]{
     right: -10%;
     bottom:-30px;
 }
+
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    .project-title img{
+        max-width: 580px;
+    }
+    .project-title img[class$="1"]{
+        left: -15%;
+        top:-200px;
+    }
+    .project-title img[class$="2"]{
+        right: -15%;
+        bottom:-200px;
+    }
+}
+@media only screen and (max-width: 768px) and (min-width: 415px){
+        .project-title img{
+        max-width: 400px;
+    }
+    .project-title img[class$="1"]{
+        left: -17%;
+        top:-120px;
+    }
+        .project-title img[class$="2"]{
+        right: -17%;
+        bottom:-120px;
+    }
+}
+@media only screen and (max-width: 414px) {
+    .project-title img{
+        max-width: 400px;
+    }
+    .project-title img[class$="1"]{
+        left: -17%;
+        top:-120px;
+    }
+        .project-title img[class$="2"]{
+        right: -17%;
+        bottom:-120px;
+    }
+    .project-title > h1 {
+        font-size: var(--display-fs-6);
+    }
+}
+
+
 
 
 /*client section*/
@@ -56,6 +121,14 @@ img[class$="2"]{
     height:auto;
 }
 
+@media only screen and (max-width: 768px){
+    .client-intro > .col-1, .col-2{
+        width: 100%;
+    }
+    .client-intro > .col-1 {
+        margin-bottom: 60px;
+    }
+}
 
 /*project overview*/
 .project-overview .col-1{
@@ -79,6 +152,50 @@ img[class$="2"]{
     max-width: 900px;
     height: auto;
     position: absolute;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 415px){
+    .project-overview .col-1 {
+        width: 100%;
+        padding-right:0;
+        margin-bottom: 60px;
+    }
+    .project-overview .col-2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .project-overview .col-2 .old-homepage{
+        max-width: 600px;
+        height: auto;
+        position: static;
+    }
+
+}
+
+@media only screen and (max-width: 414px){
+    .project-overview .col-1 {
+        width: 100%;
+        padding-right:0;
+        margin-bottom: 60px;
+    }
+    .project-overview .col-1 .breakdown {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        column-gap: 0;
+    }
+    .project-overview .col-2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .project-overview .col-2 .old-homepage{
+        max-width: 360px;
+        height: auto;
+        position: static;
+    }
 }
 
 /*problems*/
@@ -105,6 +222,32 @@ img[class$="2"]{
     max-width: 400px;
 }
 
+@media only screen and (max-width: 768px) and (min-width: 415px) {
+    .problems > .row-1, .row-2{
+        flex-direction: column;
+    }
+    .problems > .row-1 {
+        margin-bottom: 60px;
+    }
+    .problem > h2 {
+        width: 560px;
+    }
+}
+
+@media only screen and (max-width: 414px)  {
+    .problems > .row-1, .row-2{
+        flex-direction: column;
+    }
+    .problems > .row-1 {
+        margin-bottom: 60px;
+    }
+    .problem > h2 {
+        width: 350px;
+    }
+}
+
+
+
 /*how might we*/
 .hmw{
     display: flex;
@@ -118,6 +261,21 @@ img[class$="2"]{
     flex-direction: column;
     max-width: 960px;
     align-items: flex-start;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 415px){
+    .hmw > .wrapper{
+        max-width: 568px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .hmw{
+        align-items: normal;
+    }
+    .hmw > .wrapper{
+        max-width: 350px;
+    }
 }
 
 /*project kickoff*/
@@ -169,15 +327,16 @@ img[class$="2"]{
 }
 
 .kickoff .row-2 .wrapper{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 60% 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 2rem;
 }
 .kickoff .row-2 .wrapper > .col-1{
     margin-right: 0;
 }
 .competitor-graph_container{
-    width: 60%;
+    width: 100%;
     height: 250px;
     padding: 16px;
     display: flex;
@@ -185,12 +344,82 @@ img[class$="2"]{
     align-items: center;
 }
 .competitor-graph_container > img{
-    /* max-width: 500px; */
-    width: 40%;
-    height: 40%;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
     content: url(../../../images/graph.png);
 }
+
+
+@media only screen and (max-width: 768px) and (min-width: 415px){
+    .kickoff .wrapper{
+        flex-direction: column;
+    }
+    .kickoff .wrapper .arrows{
+        display: none;
+    }
+    .kickoff .wrapper > .col-1{
+        margin-bottom: var(--p-space-lg);
+    }
+
+    .kickoff .row-2 .wrapper {
+        grid-template-columns: 300px auto 300px;
+        grid-template-rows: repeat(1fr auto);
+    }
+    .competitor-graph_container{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+
+    }
+
+    .kickoff .row-2 .wrapper > .col-1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .kickoff .row-2 .wrapper > .col-3{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .kickoff .wrapper{
+        flex-direction: column;
+    }
+    .kickoff .wrapper .arrows{
+        display: none;
+    }
+    .kickoff .wrapper > .col-1{
+        margin-bottom: var(--p-space-lg);
+    }
+
+    .kickoff .row-2 .wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .competitor-graph_container{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+
+    }
+
+    .kickoff .row-2 .wrapper > .col-1{
+        display: none;
+    }
+    .kickoff .row-2 .wrapper > .col-3{
+        display: none;
+    }
+}
+
+
 
 
 /*solutions*/
@@ -213,6 +442,16 @@ img[class$="2"]{
 }
 
 
+@media only screen and (max-width: 768px) {
+    .solutions-container {
+        flex-direction: column;
+    }
+    .solutions-container > .solution{
+        margin-bottom: var(--p-space-sm);
+    }
+}
+
+
 /*features walkthrough*/
 section[class*="feature"]{
     flex-direction: column;
@@ -220,6 +459,7 @@ section[class*="feature"]{
     height: fit-content;
     overflow: hidden;
 }
+
 div[class*="highlight-1"]{
     margin-top: 120px;
 }
@@ -230,12 +470,39 @@ div[class*="highlight-2"]{
     margin-bottom: 100px;
 }
 
+
+@media only screen and (max-width: 414px) {
+    section[class*="feature"] {
+        height: 900px;
+        align-items: center;
+    }
+    section[class*="feature"] > .intro{
+        width: 100%;
+    }
+    div[class*="highlight"]{
+        width: 100%;
+    }
+}
+
 .feature-1 > .welcome-section {
     content: url(../../../images/Homepage/homepage_feature1.png);
-    max-width: 800px;
+    width: 50%;
     position: absolute;
     right: 0;
     z-index: -1;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 415px) {
+    .feature-1 > .welcome-section {
+        width: 65%;
+        right: -50px;
+    }
+}
+@media only screen and (max-width: 414px) {
+    .feature-1 > .welcome-section {
+        position: static;
+        width: 80%;
+    }
 }
 
 /*feature2*/
@@ -243,19 +510,47 @@ div[class*="highlight-2"]{
     content: url(../../../images/Homepage/homepage_feature2.png);
     position: absolute;
     right: 0;
-    top:-250px;
     z-index: -1;
-    max-width: 800px;
+    width: 50%;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 415px) {
+    .module-status {
+        width: 65%;
+        right: -50px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .module-status {
+        position: static;
+        width: 80%;
+    }
 }
 
 /*feature3*/
 .customization-panel{
     content: url(../../../images/Homepage/homepage_feature3.png);
     position: absolute;
-    right: 10vw;
-    max-width: 400px;
+    right: 4vw;
+    width: 35%;
     z-index: -1;
 }
+
+@media only screen and (max-width: 768px) and (min-width: 415px) {
+    .customization-panel {
+        width: 45%;
+        right: -40px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .customization-panel{
+        position: static;
+        width: 50%;
+    }
+}
+
 
 
 /*impact & next steps*/

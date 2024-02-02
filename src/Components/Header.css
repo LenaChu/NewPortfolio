@@ -69,7 +69,7 @@
   flex-direction: column;
   top: 72px;
   left:0;
-  width: 100vw;
+  width: 100%;
   box-shadow: var(--depth-1);
   z-index: 8;
   /* opacity: 1;

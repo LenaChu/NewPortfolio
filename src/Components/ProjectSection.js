@@ -1,5 +1,6 @@
 import Project from "./Project";
 import "./ProjectSection.css";
+import { paths } from "../paths";
 
 export default function ProjectSecion() {
   return (
@@ -8,19 +9,19 @@ export default function ProjectSecion() {
         company="TalentGuard"
         pills={["UX Design", "UX Research", "UI Design", "Product Management"]}
         title="User Homepage"
-        path="/userhomepage"
+        path={paths.userHomepage}
       />
       <Project
         company="TalentGuard"
         pills={["UX Design", "Product Management", "UI Design"]}
         title="Notification Center"
-        path="/notification"
+        path={paths.notification}
       />
       <Project
         company="TalentGuard"
         pills={["UX Design", "Design System"]}
         title="Typography"
-        path="/typography"
+        path={paths.typography}
       />
     </section>
   );

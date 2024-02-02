@@ -204,7 +204,7 @@ export default function Homepage() {
       <section class="sec feature-2">
         <div className="intro">
           <h3 className="t-mb_md">Feature #2</h3>
-          <h2 className="txt-d-4">Module Status + Call to Actiions</h2>
+          <h2 className="txt-d-4">{content.feature2.title}</h2>
         </div>
         <div className="highlight-1 p-mb_lg">
           <h3 className="t-mb_md">{content.feature2.highlight1.title}</h3>

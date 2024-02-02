@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
+import { paths } from "../paths";
 
 export default function Header() {
   const [state, setState] = useState("");
@@ -21,14 +22,14 @@ export default function Header() {
       </div>
       <div className={`container__fullsize ${state}`}>
         <Link
-          to="/"
+          to={paths.home}
           style={{ textDecoration: "none", color: "rgb(0 0 0/87%)" }}
         >
           <div className="nav-bttn">Home</div>
         </Link>
 
         <Link
-          to="/about"
+          to={paths.about}
           style={{ textDecoration: "none", color: "rgb(0 0 0/87%)" }}
         >
           <div className="nav-bttn">About</div>
