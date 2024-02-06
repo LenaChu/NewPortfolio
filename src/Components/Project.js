@@ -1,5 +1,6 @@
 import "./Project.css";
 import { Link } from "react-router-dom";
+import Button from "./Button";
 
 export default function Project(props) {
   const pills = props.pills.map(function (pill) {
@@ -7,11 +8,27 @@ export default function Project(props) {
   });
   return (
     <div className="project-container">
-      <Link to={props.path}>
-        <div className="project-image"></div>
-      </Link>
-      <p>Company: {props.company}</p>
-      <div className="pills-container">{pills}</div>
+      <div className="project-image">
+        <img className="device-mockup" alt="Design Mockup"></img>
+        <div className="project-image overlay"></div>
+        <Button path={props.path} text="View Project"></Button>
+      </div>
+      <div className="project-brief">
+        <h2 className="t-mb_md">{props.title}</h2>
+        <p className="p-mb_md project-intro">{props.intro}</p>
+        <div className="project-info">
+          <div className="project-company t-mb_sm">
+            <h3>Company</h3>
+            <p>{props.company}</p>
+          </div>
+          <div className="project-timeline">
+            <h3>Timeline</h3>
+            <p>{props.timeline}</p>
+          </div>
+        </div>
+        <div className="pills-container p-mb_lg">{pills}</div>
+        <Button path={props.path} text="View Project"></Button>
+      </div>
     </div>
   );
 }

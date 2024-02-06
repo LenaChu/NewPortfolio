@@ -9,7 +9,7 @@ export default function HeroSection() {
       <div className="hero-statement">
         <div className="display-title">Hi! Welcome to my place. 👋</div>
         <p>
-          A UX designer by day, and an aspiring Salsa dancer at night!
+          I am a UX designer by day, and an aspiring Salsa dancer at night!
           <span>&#128131;</span>
         </p>
       </div>

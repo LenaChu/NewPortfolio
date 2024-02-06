@@ -4,4 +4,6 @@ export const paths = {
   userHomepage: "/userhomepagge",
   notification: "/notification",
   typography: "/typography",
+  linkedin: "/linkedin",
+  instagram: "/instagram",
 };

@@ -1,0 +1,23 @@
+.bttn.default {
+    font-weight: 600;
+    color: var(--txt-light-1);
+    min-width: 100px;
+    padding: 0.75rem 1.5rem;
+    outline: none;
+    background-color: var(--primary-color-400);
+    border-radius: 4px;
+    border:none;
+    transition: ease-in 0.2s;
+    cursor: pointer;
+}
+.bttn:hover{
+    background-color: var(--primary-color-600);
+}
+.bttn:active {
+    background-color: var(--primary-color-600);
+    outline: var(--primary-color-300);
+}
+.bttn:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}

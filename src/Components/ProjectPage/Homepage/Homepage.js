@@ -9,10 +9,25 @@ export default function Homepage() {
   return (
     <main>
       <section className="sec project-title">
-        <h1 className="display-4">{content.heroSection.title}</h1>
-        <h5>{content.heroSection.statement}</h5>
-        <img className="bg-image 1" alt="user homepage mockup"></img>
-        <img className="bg-image 2" alt="user homepage mockup"></img>
+        <div className="project-intro__container">
+          <div className="project-intro__content">
+            <h1 className="t-mb_sm">{content.heroSection.title}</h1>
+            <h4 className="t-mb_lg">{content.heroSection.statement}</h4>
+            <p>{content.heroSection.description}</p>
+          </div>
+          <div className="project-intro__image">
+            <img
+              className="user-homepage-mockup"
+              alt="Homepage in device mockup"
+            ></img>
+          </div>
+        </div>
+        <div className="project-breakdown__container">
+          <div className="project-breakdown__audience"></div>
+          <div className="project-breakdown__timeline"></div>
+          <div className="project-breakdown__roles"></div>
+          <div className="project-breakdown__members"></div>
+        </div>
       </section>
       <section className="sec client-intro">
         <div className="col-1">
@@ -34,34 +49,7 @@ export default function Homepage() {
         </div>
       </section>
       <section className="sec project-overview">
-        <div className="col-1">
-          <div className="intro p-mb_lg">
-            <h2 className="t-mb_lg">{content.overview.title}</h2>
-            <p>{content.overview.description}</p>
-          </div>
-          <div className="breakdown">
-            <div className="responsibilities">
-              <h3 className="t-mb_md">My Responsibilities</h3>
-              <p>{content.overview.breakdown.responsibilities}</p>
-            </div>
-            <div className="challenges">
-              <h3 className="t-mb_md">Challenges</h3>
-              <p>{content.overview.breakdown.challenges}</p>
-            </div>
-            <div className="members">
-              <h3 className="t-mb_md">Team Members</h3>
-              <p>{content.overview.breakdown.members}</p>
-            </div>
-            <div className="delivery">
-              <h3 className="t-mb_md">Final Delivery</h3>
-              <p>{content.overview.breakdown.delivery}</p>
-            </div>
-            <div className="timeline">
-              <h3 className="t-mb_md">Timeline</h3>
-              <p>{content.overview.breakdown.timeline}</p>
-            </div>
-          </div>
-        </div>
+        <div className="col-1"></div>
         <div className="col-2">
           <img className="old-homepage" alt="TalentGuard Old Homepage"></img>
         </div>

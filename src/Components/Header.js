@@ -15,6 +15,9 @@ export default function Header() {
   }
   return (
     <header className="header">
+      <Link to={paths.home}>
+        <img className="personal-logo" alt="Personal Logo"></img>
+      </Link>
       <div className="nav-bttn_container" onClick={handleClick}>
         <div className={`line-1 ${state}`}></div>
         <div className={`line-2 ${state}`}></div>

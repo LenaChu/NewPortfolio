@@ -16,6 +16,14 @@
   top: 0;
   z-index: 9;
 }
+.personal-logo{
+  content: url(../images/personal-logo.png);
+  width: auto;
+  height: 48px;
+  position: absolute;
+  left: 40px;
+  top: 14px;
+}
 
 [class^="nav-bttn_container"] {
   width: 40px;
