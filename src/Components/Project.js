@@ -1,5 +1,4 @@
 import "./Project.css";
-import { Link } from "react-router-dom";
 import Button from "./Button";
 
 export default function Project(props) {
@@ -10,8 +9,6 @@ export default function Project(props) {
     <div className="project-container">
       <div className="project-image">
         <img className="device-mockup" alt="Design Mockup"></img>
-        <div className="project-image overlay"></div>
-        <Button path={props.path} text="View Project"></Button>
       </div>
       <div className="project-brief">
         <h2 className="t-mb_md">{props.title}</h2>

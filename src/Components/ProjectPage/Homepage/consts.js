@@ -5,13 +5,21 @@ export const content = {
     description:
       "TalentGuard’s user homepage was complained about not being helpful to users to start using this platform. Sales were also losing deals from the competitors with prospect clients commenting the homepage was not eye-catching. A new user homepage was requested to satisfy users’ needs for a more actionable and up-to-standard landing experience.",
     breakdown: {
-      responsibilities:
-        "User research, stakeholders management, UI design, user stories, design QA",
-      members:
-        "A Product manager, a technical writer, five full-stake developers, a QA engineer",
+      responsibilities: [
+        "User research",
+        "Stakeholders management",
+        "UI design",
+        "User stories",
+        "Design QA",
+      ],
+      members: [
+        "1 product manager",
+        "1 technical writer",
+        "5 full-stake developers",
+        "1 QA engineer",
+      ],
       timeline: "April 2022 - August 2022 (15 weeks)",
-      challenges:
-        "Short deadline, content restriction, and limited access to end-users",
+      targetAudience: "Employees in organizations",
       delivery: "MVP of the user homepage",
     },
   },

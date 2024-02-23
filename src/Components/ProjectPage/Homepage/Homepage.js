@@ -9,7 +9,7 @@ export default function Homepage() {
   return (
     <main>
       <section className="sec project-title">
-        <div className="project-intro__container">
+        <div className="project-intro__container p-mb_lg">
           <div className="project-intro__content">
             <h1 className="t-mb_sm">{content.heroSection.title}</h1>
             <h4 className="t-mb_lg">{content.heroSection.statement}</h4>
@@ -23,10 +23,40 @@ export default function Homepage() {
           </div>
         </div>
         <div className="project-breakdown__container">
-          <div className="project-breakdown__audience"></div>
-          <div className="project-breakdown__timeline"></div>
-          <div className="project-breakdown__roles"></div>
-          <div className="project-breakdown__members"></div>
+          <div className="project-breakdown__roles">
+            <h4 className="t-mb_sm">My Roles</h4>
+            <ul>
+              {content.heroSection.breakdown.responsibilities.map(
+                (role, index) => (
+                  <li className="t-mb_sm" key={index}>
+                    {role}
+                  </li>
+                )
+              )}
+            </ul>
+          </div>
+          <div className="project-breakdown__members">
+            <h4 className="t-mb_sm">Team Members</h4>
+            <ul>
+              {content.heroSection.breakdown.members.map((member, index) => (
+                <li className="t-mb_sm" key={index}>
+                  {member}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="project-breakdown__audience">
+            <h4 className="t-mb_sm">Target Audience</h4>
+            <p>{content.heroSection.breakdown.targetAudience}</p>
+          </div>
+          <div className="project-breakdown__timeline">
+            <h4 className="t-mb_sm">Timeline</h4>
+            <p>{content.heroSection.breakdown.timeline}</p>
+          </div>
+          <div className="project-breakdown__delivery">
+            <h4 className="t-mb_sm">Final Delivery</h4>
+            <p>{content.heroSection.breakdown.delivery}</p>
+          </div>
         </div>
       </section>
       <section className="sec client-intro">
@@ -48,8 +78,17 @@ export default function Homepage() {
           <img className="tg-logo" alt="TalentGuard Logo"></img>
         </div>
       </section>
-      <section className="sec project-overview">
-        <div className="col-1"></div>
+      <section className="sec problem-context">
+        <div className="col-1">
+          <h2 className="t-mb_md">A bare landing experience</h2>
+          <p>
+            TalentGuard’s talent platform aims to empower employees to foster
+            their skills, identify space of development, and discover career
+            opportunities. As the first touch point, the original homepage
+            didn’t serve much to help users discover the functionalities and
+            take actions.
+          </p>
+        </div>
         <div className="col-2">
           <img className="old-homepage" alt="TalentGuard Old Homepage"></img>
         </div>

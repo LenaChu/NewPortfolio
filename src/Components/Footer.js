@@ -9,13 +9,13 @@ export default function Footer() {
   return (
     <footer>
       <p>
-        <span>&#169;</span>Created and coded by Lena
+        <span>&#169;</span>Designed and coded by Lena
       </p>
       <div className="social-media-links">
         <Link to={paths.linkedin}>
           <FontAwesomeIcon icon={faLinkedin} size="xl" />
         </Link>
-        <Link to={paths.instagrams}>
+        <Link to={paths.instagram}>
           <FontAwesomeIcon icon={faSquareInstagram} size="xl" />
         </Link>
       </div>
