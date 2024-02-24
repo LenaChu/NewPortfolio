@@ -1,6 +1,13 @@
 import "./Homepage.css";
 import { content } from "./consts";
 import PageNav from "../../PageNav";
+import newHomepage from "../../../images/Desktop-dark 2.png";
+import oldHomepage from "../../../images/old-homepage.png";
+import tgLogo from "../../../images/tg-logo.png";
+import competitorGraph from "../../../images/graph.png";
+import featureOne from "../../../images/Homepage/homepage_feature1.png";
+import featureTwo from "../../../images/Homepage/homepage_feature2.png";
+import featureThree from "../../../images/Homepage/homepage_feature3.png";
 
 export default function Homepage() {
   const nextStepBullets = content.impacts.next.bullets;
@@ -10,16 +17,17 @@ export default function Homepage() {
     <main>
       <section className="sec project-title">
         <div className="project-intro__container p-mb_lg">
-          <div className="project-intro__content">
-            <h1 className="t-mb_sm">{content.heroSection.title}</h1>
-            <h4 className="t-mb_lg">{content.heroSection.statement}</h4>
-            <p>{content.heroSection.description}</p>
-          </div>
           <div className="project-intro__image">
             <img
               className="user-homepage-mockup"
               alt="Homepage in device mockup"
+              src={newHomepage}
             ></img>
+          </div>
+          <div className="project-intro__content">
+            <h1 className="t-mb_sm">{content.heroSection.title}</h1>
+            <h4 className="t-mb_lg">{content.heroSection.statement}</h4>
+            <p>{content.heroSection.description}</p>
           </div>
         </div>
         <div className="project-breakdown__container">
@@ -75,7 +83,7 @@ export default function Homepage() {
           </div>
         </div>
         <div className="col-2">
-          <img className="tg-logo" alt="TalentGuard Logo"></img>
+          <img className="tg-logo" alt="TalentGuard Logo" src={tgLogo}></img>
         </div>
       </section>
       <section className="sec problem-context">
@@ -90,7 +98,11 @@ export default function Homepage() {
           </p>
         </div>
         <div className="col-2">
-          <img className="old-homepage" alt="TalentGuard Old Homepage"></img>
+          <img
+            className="old-homepage"
+            alt="TalentGuard Old Homepage"
+            src={oldHomepage}
+          ></img>
         </div>
       </section>
       <section className="sec problems">
@@ -173,7 +185,11 @@ export default function Homepage() {
               <p>{content.kickoff.competitors.categories.management}</p>
             </div>
             <div className="col-2 competitor-graph_container">
-              <img className="competitor-graph" alt="Competitors Aalysis"></img>
+              <img
+                className="competitor-graph"
+                alt="Competitors Aalysis"
+                src={competitorGraph}
+              ></img>
             </div>
             <div className="col-3 workforce-dev">
               <h3 className="t-mb_md">Workforce Management</h3>
@@ -226,6 +242,7 @@ export default function Homepage() {
         <img
           className="feature-img welcome-section"
           alt="Feature #1 Welcome Section"
+          src={featureOne}
         ></img>
       </section>
       <section class="sec feature-2">
@@ -244,6 +261,7 @@ export default function Homepage() {
         <img
           className="feature-img module-status"
           alt="Feature #2 Module Status + Call to Actions"
+          src={featureTwo}
         ></img>
       </section>
       <section class="sec feature-3">
@@ -262,6 +280,7 @@ export default function Homepage() {
         <img
           className="feature-img customization-panel"
           alt="Feature #3 Customization Panel"
+          src={featureThree}
         ></img>
       </section>
       <section className="sec impacts_next">

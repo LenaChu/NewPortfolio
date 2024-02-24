@@ -11,12 +11,6 @@ footer {
   align-items: center;
 }
 
-.footer-mark__contaier {
-  display: flex;
-  flex-direction: row;
-}
-
-
 footer > p{
   line-height: 80px;
 }
