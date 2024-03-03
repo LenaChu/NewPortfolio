@@ -3,7 +3,7 @@ export const content = {
     title: "User Homepage",
     statement: "Empower users to achive their career goals.",
     description:
-      "TalentGuard’s user homepage was complained about not being helpful to users to start using this platform. Sales were also losing deals from the competitors with prospect clients commenting the homepage was not eye-catching. A new user homepage was requested to satisfy users’ needs for a more actionable and up-to-standard landing experience.",
+      "TalentGuard’s user homepage was complained about not being helpful to users to start using this platform. Sales were also losing deals with prospect clients commenting the homepage was not eye-catching. A new user homepage was requested to satisfy users’ needs for a more actionable and up-to-standard landing experience.",
     breakdown: {
       responsibilities: [
         "User research",
